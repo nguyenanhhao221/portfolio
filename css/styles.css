@@ -13,14 +13,17 @@ h1,h2,h3,h4 {
 
 h1 {
     font-size: 4.5rem;
+    margin: 1.5rem 0;
 }
 
 h2 {
     font-size: 3.75rem;
+    margin: 1.3rem 0;
 }
 
 h3 {
     font-weight: 3rem;
+    margin: 1rem 0;
 }
 
 main {
@@ -36,7 +39,7 @@ main {
 .nav-container {
     display: flex;
     justify-content: flex-end;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
     top: 0;
     width: 100%;
@@ -78,16 +81,85 @@ header {
 .hero span {
     font-size: 1.5rem;
 }
+.hero h1 {
+    padding: 1rem 0;
+}
 
 /* About-Me Start */
 .about-me {
     padding: 2rem 0;
+    display: flex;
 }
 
 .left-col {
-
+    flex-basis: 60%;
+    padding: 3rem 2rem;
+}
+ .description {
+     width: 80%;
 }
 
+.left-col-description {
+	position: relative;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.left-col-description:before, .left-col-description:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.left-col-description:before {
+    top: 80%;
+    left: 0;
+    right: 60%;
+    bottom: 0;
+    border-bottom: 4px dashed #3D68AD;
+    border-left: 4px dashed #3D68AD;
+}
+
+.left-col-description:after {
+	top: 0%;
+    left: 60%;
+    right: 0;
+    bottom: 80%;
+    border-top: 4px dashed #3D68AD;
+    border-right: 4px dashed #3D68AD;
+}
+ .left-col-description p {
+     line-height: 2;
+ }
+
+
+.right-col {
+    flex-basis: 40%;
+}
+
+.right-col .images-container {
+    width: 90%;
+    overflow: hidden;
+}
+
+.right-col .images-container img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.btn-primary {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #3D68AD;
+    color: #ffff;
+}
 
 
 
