@@ -34,18 +34,21 @@ h3 {
 
 /* header start  */
 
-.logo-nav-container {
+.nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
-.logo-nav-container .logo .images-container img {
-    width: 100px;
-    height: 100px;
-}
+
 
 nav ul {
     display: flex;
-    padding-top: 1.2rem;
+    color: rgb(255, 255, 255);
+    
 }
 
 nav ul li {
@@ -57,7 +60,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 1000px; */
+    margin-top: 3rem;
 }
 
 .hero {
