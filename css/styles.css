@@ -201,7 +201,7 @@ header {
     gap: 2rem;
 }
 .project-container {
-    border : 1px solid black
+    /* border : 1px solid black */
 }
 .projects .images-container {
     overflow: hidden;
@@ -212,5 +212,58 @@ header {
     height: auto;
 }
 
-
 /* Project Section End */
+
+/* Contact Section Start  */
+.contact {
+    background-color: #F3f3f3;
+    padding: 1rem 0;
+}
+.contact .title {
+    text-align: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.contact-container .left-col input {
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.contact-container .left-col .btn-primary {
+    width: 30%;
+    font-size: 1rem;
+}
+.contact-container .left-col h4 {
+    padding: 1rem;
+}
+
+.contact-container .left-col textarea {
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.right-col {
+    padding: 3rem 2rem;
+}
+
+.right-col i {
+    padding: 1rem 0.5rem;
+}
+/* Contact Section End  */
+
+footer {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+}
+
+footer p {
+    padding: 0 2rem;
+}
