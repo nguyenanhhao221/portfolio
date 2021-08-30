@@ -128,13 +128,27 @@ header {
     left: 60%;
     right: 0;
     bottom: 80%;
-    border-top: 4px dashed #3D68AD;
-    border-right: 4px dashed #3D68AD;
+    border-top: 4px dashed #EBBC5B;
+    border-right: 4px dashed #EBBC5B;
 }
  .left-col-description p {
      line-height: 2;
  }
 
+ .left-col-description h3 {
+     color: #5B92EB;
+ }
+ .btn-primary {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    border: 1px solid #9E741E;
+    border-radius: 1rem;
+    background-color: #3D68AD;
+    color: #FFFF;
+    font-weight: bold;
+}
 
 .right-col {
     flex-basis: 40%;
@@ -150,17 +164,31 @@ header {
     display: block;
     height: auto;
 }
+/* About-Me End */
 
-.btn-primary {
-    margin: 1rem 0;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    text-align: center;
-    border-radius: 1rem;
-    background-color: #3D68AD;
-    color: #ffff;
+/* Skills Section Start */
+.skills {
+    padding: 1rem 0;
+    background-color: #F3f3f3;
+}
+.skills h2 {
+    text-align:  center;
+}
+
+.skills .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+.skills .item {
+    display: flex;
+}
+
+.skills .item .description {
+    padding-left: 1rem;
 }
 
 
 
-/* About-Me End */
+/* Skills Section End */
