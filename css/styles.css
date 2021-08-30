@@ -22,13 +22,10 @@ h2 {
 }
 
 h3 {
-    font-weight: 3rem;
+    font-weight: 3.5rem;
     margin: 1rem 0;
 }
 
-main {
-    padding: 0 2rem;
-}
 
 .images-container {
     overflow: hidden;
@@ -168,8 +165,9 @@ header {
 
 /* Skills Section Start */
 .skills {
-    padding: 1rem 0;
+    padding: 2rem 0;
     background-color: #F3f3f3;
+
 }
 .skills h2 {
     text-align:  center;
@@ -188,7 +186,31 @@ header {
 .skills .item .description {
     padding-left: 1rem;
 }
-
-
-
 /* Skills Section End */
+
+/* Project Section Start */
+.projects .title {
+    text-align: center;
+}
+
+.container {
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.project-container {
+    border : 1px solid black
+}
+.projects .images-container {
+    overflow: hidden;
+}
+
+.projects .images-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Project Section End */
