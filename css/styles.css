@@ -23,10 +23,9 @@ h3 {
     font-weight: 3rem;
 }
 
-/* .wrapper {
-    margin: auto;
+main {
     padding: 0 2rem;
-} */
+}
 
 .images-container {
     overflow: hidden;
@@ -43,7 +42,6 @@ h3 {
     width: 100%;
     z-index: 2;
 }
-
 
 nav ul {
     display: flex;
@@ -72,9 +70,6 @@ header {
     padding: 2rem;
 }
 
-.hero .text {
-    opacity: 1;
-}
 .hero h2 {
     font-weight: normal;
     font-style: italic;
@@ -83,3 +78,17 @@ header {
 .hero span {
     font-size: 1.5rem;
 }
+
+/* About-Me Start */
+.about-me {
+    padding: 2rem 0;
+}
+
+.left-col {
+
+}
+
+
+
+
+/* About-Me End */
