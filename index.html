@@ -13,17 +13,17 @@
 
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/newstyle.css">
-    <script src="./js/menu.js" async></script>
+    <script src="./js/menu.js" defer></script>
     <title>Hao Nguyen - Web Development</title>
 </head>
 
 <body>
     <header id ="home">
         <div class="nav-container">
-            <nav class="mobile" id="nav-bar">
+            <nav class="mobile" id="nav">
                 <i class="fas fa-bars fa-2x" id ="hamburger"></i>
                 <ul id ="nav-ul">
-                    <li><a href="home" class="active"></a>Home</li>
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -69,45 +69,47 @@
                 </div>
             </section>
 
-            <section class="skills" id="skills">
+            <section class="skills bg-dark" id="skills">
                 <div class="container">
                     <div class="skills-title">
                         <h2>Skills</h2>
                     </div>
-                        <div class="item">
-                            <div class="icon-container">
-                                <i class="fa fa-html5 fa-5x"></i>
+                        <div class="items-container">
+                            <div class="item">
+                                <div class="icon-container">
+                                    <i class="fa fa-html5 fa-5x html"></i>
+                                </div>
+                                <div class="description">
+                                    <h3>HTML</h3>
+                                    <p>Level: Intermediate</p>
+                                </div>
                             </div>
-                            <div class="description">
-                                <h3>HTML</h3>
-                                <p>Level: Intermediate</p>
+                            <div class="item">
+                                <div class="icon-container">
+                                    <i class="fa fa-css3 fa-4x css"></i>
+                                </div>
+                                <div class="description">
+                                    <h3>CSS</h3>
+                                    <p>Level: Intermediate</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="icon-container">
-                                <i class="fa fa-css3 fa-5x"></i>
+                            <div class="item">
+                                <div class="icon-container">
+                                    <i class="fab fa-js fa-5x js"></i>
+                                </div>
+                                <div class="description">
+                                    <h3>JavaScript</h3>
+                                    <p>Level: Intermediate</p>
+                                </div>
                             </div>
-                            <div class="description">
-                                <h3>CSS</h3>
-                                <p>Level: Intermediate</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="icon-container">
-                                <i class="fab fa-js fa-5x"></i>
-                            </div>
-                            <div class="description">
-                                <h3>JavaScript</h3>
-                                <p>Level: Intermediate</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="icon-container">
-                                <i class="fa fa-github fa-5x"></i>
-                            </div>
-                            <div class="description">
-                                <h3>Git</h3>
-                                <p>Level: Intermediate</p>
+                            <div class="item">
+                                <div class="icon-container">
+                                    <i class="fa fa-github fa-5x github"></i>
+                                </div>
+                                <div class="description">
+                                    <h3>Git</h3>
+                                    <p>Level: Intermediate</p>
+                                </div>
                             </div>
                         </div>
                 </div>
@@ -119,37 +121,37 @@
                     <div class="title">
                         <h2>Projects</h2>
                     </div>
-                        <div class="project-container">
-                            <div class="project-title">
-                                <h3>Fotomatic</h3>
+                        <div class="items-container">
+                            <div class="project-container">
+                                <div class="project-title">
+                                    <h3>Fotomatic</h3>
+                                </div>
+                                <div class="images-container">
+                                    <img src="./resources/img/fotomatic.png" alt="fotomatic project">
+                                </div>
                             </div>
-                            <div class="images-container">
-                                <img src="./resources/img/fotomatic.png" alt="fotomatic project">
+                            <div class="project-container">
+                                <div class="project-title">
+                                    <h3>Colmar Academy</h3>
+                                </div>
+                                <div class="images-container">
+                                    <img src="./resources/img/colmar.png" alt="Colmar Acedemy project">
+                                </div>
                             </div>
-                    
-                        </div>
-                        <div class="project-container">
-                            <div class="project-title">
-                                <h3>Colmar Academy</h3>
-                            </div>
-                            <div class="images-container">
-                                <img src="./resources/img/colmar.png" alt="Colmar Acedemy project">
-                            </div>
-                    
-                        </div>
-                        <div class="project-container">
-                            <div class="project-title">
-                                <h3>Excursion</h3>
-                            </div>
-                            <div class="images-container">
-                                <img src="./resources/img/excursion.png" alt="excursion project">
+                            <div class="project-container">
+                                <div class="project-title">
+                                    <h3>Excursion</h3>
+                                </div>
+                                <div class="images-container">
+                                    <img src="./resources/img/excursion.png" alt="excursion project">
+                                </div>
                             </div>
                         </div>
                 </div>
 
             </section>
 
-            <section class="contact" id="contact">
+            <section class="contact bg-dark" id="contact">
                 <div class="title">
                     <h2>Contact me</h2>
                     <p>If you have any interest in my work or just want to have a chat feel free to contact me</p>
@@ -169,8 +171,8 @@
                 </div>
                 <div class="right-col">
                     <p>Or You Can Reach Me By Social Media</p>
-                    <i class="fa fa-facebook-official fa-3x"></i>
-                    <i class="fa fa-twitter fa-3x"></i>
+                    <i class="fa fa-facebook-official fa-3x fb"></i>
+                    <i class="fa fa-twitter fa-3x twitter"></i>
                     <i class="fa fa-envelope fa-3x"></i>
                 </div>
             </div>
