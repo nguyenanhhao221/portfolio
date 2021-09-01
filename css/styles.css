@@ -5,6 +5,13 @@
 html {
     font-size: 16px;
     font-family: 'Merriweather', serif;
+    line-height: 1.6;
+}
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 14px;
+        line-height: 1.4;
+    }
 }
 
 h1,h2,h3,h4 {
@@ -25,7 +32,13 @@ h3 {
     font-weight: 3.5rem;
     margin: 1rem 0;
 }
-
+li a {
+    color: #FFF;
+    text-decoration: none;
+}
+li a:hover {
+    text-decoration: underline;
+}
 
 .images-container {
     overflow: hidden;
@@ -59,6 +72,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 3rem;
+    width: 100%;
 }
 
 .hero {
@@ -80,6 +94,17 @@ header {
 }
 .hero h1 {
     padding: 1rem 0;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        padding: 0.3rem;
+    }
 }
 
 /* About-Me Start */
@@ -152,7 +177,6 @@ header {
 }
 
 .right-col .images-container {
-    width: 90%;
     overflow: hidden;
 }
 
@@ -160,6 +184,7 @@ header {
     max-width: 100%;
     display: block;
     height: auto;
+    margin: 0 auto;
 }
 /* About-Me End */
 
@@ -173,11 +198,20 @@ header {
     text-align:  center;
 }
 
+.skills h3 {
+    text-align: left;
+}
+
 .skills .container {
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 1rem 0;
+}
+@media screen and (max-width: 900px) {
+    .skills .container {
+        flex-direction: column;
+    }
 }
 .skills .item {
     display: flex;
@@ -196,8 +230,7 @@ header {
 .container {
     padding: 2rem;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
     gap: 2rem;
 }
 .project-container {
