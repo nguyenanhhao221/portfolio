@@ -13,7 +13,7 @@
 }
 
 html {
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Merriweather', serif;
     line-height: 1.6;
 }
@@ -25,17 +25,19 @@ h3 {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 3.75rem;
+    font-size: 3rem;
 }
 
 h3 {
-    font-weight: 3.5rem;
+    font-weight: 2rem;
 }
-
+p {
+    font-size: 1.2rem;
+}
 a {
     text-decoration: none;
     color: var(--clr-neutral);
@@ -88,14 +90,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.3rem;
+    padding: 1rem;
 }
 nav ul {
     display: flex;
+    align-items: center;
+    font-size: 1rem;
 }
 
 nav ul li {
-    padding: 0 1.5rem;
+    padding: 0 0.5rem;
 }
 nav i {
     cursor: pointer;
