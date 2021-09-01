@@ -1,0 +1,133 @@
+:root {
+    --clr-primary: #48A5F4;
+    --clr-secondary: #F5D33D;
+    --clr-dark: #f3f3f3;
+
+    --clr-neutral: #fff
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.75rem;
+}
+
+h3 {
+    font-weight: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-neutral);
+}
+
+.images-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.images-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-dark {
+    background-color: #f3f3f3;
+}
+
+.desktop {
+    display: none;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Header start */
+header {
+    background-image: url(../resources/img/programming-code-coding-or-hacker-background-programming-code-icon-made-with-binary-code-digital-binary-data-and-streaming-digital-code-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.nav-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 5;
+    color: #fff;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 1.5rem;
+}
+nav i {
+    cursor: pointer;
+}
+
+.hero {
+    padding: 5rem 2rem;
+    color: #fff;
+    
+}
+
+.hero .title {
+    width: 90%;
+    background-color: rgba(128,128,128,0.6);
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.hero .title .italic,
+.hero .title span {
+    color: var(--clr-secondary);
+}
+/* Header End */
+
+/* About me Start */
+
+/* About me End */
+
+/* Skills Start  */
+
+/* Skills End */
+
+/* Projects Start  */
+
+/* Projects End */

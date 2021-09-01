@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/newstyle.css">
     <title>Hao Nguyen - Web Development</title>
 </head>
 
@@ -19,135 +20,132 @@
     <header id ="home">
         <div class="nav-container">
             <nav>
-                <ul>
-                    <li><a href="home"></a>Home</li>
+                <i class="fas fa-bars fa-2x" id ="hamburger"></i>
+                <ul id ="nav-ul">
+                    <li><a href="home" class="active"></a>Home</li>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    </ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
             </div>
             <div class="hero">
                 <div class="title">
                     <span>Hi My Name is,</span>
-                    <h1>Nguyen Anh Hao</h1>
+                    <h1>Hao Nguyen</h1>
                     <h2>I'm a Front End Developer in Vietnam.</h2>
-                    <h2>Welcome To My Portfolio!</h2>
+                    <h2 class="italic">Welcome To My Portfolio!</h2>
                 </div>
             </div>
     </header>
 
         <main>
             <section class="about-me" id="about-me">
-                <div class="left-col">
-                    <div class="left-col-description">
-                    <h2>About Me</h2>
-                    <h3>Journey until Now</h3>
-                    <p>Hi, My name is Hao and I'm a self taught Front End Developer in Vietnam.
-                        <br>
-                        <br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                        <br>
-                        <br>
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-                        <button class="contact-me-btn btn-primary">Contact Me</button>
+                <div class="container">
+                    <div class="left-col">
+                        <div class="left-col-description">
+                        <h2>About Me</h2>
+                        <h3>Journey until Now</h3>
+                        <p>Hi, My name is Hao and I'm a self taught Front End Developer in Vietnam.
+                            <br>
+                            <br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            <br>
+                            <br>
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <button class="contact-me-btn btn-primary">Contact Me</button>
+                    </div>
                     
-                </div>
-                
-                </div>
-                
-                <div class="right-col">
-                    <div class="images-container">
-                        <img src="./resources/img/profile.jpeg" alt="">
+                    </div>
+                    
+                    <div class="right-col">
+                        <div class="images-container">
+                            <img class="desktop" src="./resources/img/profile.jpeg" alt="">
+                            <img class="mobile" src="./resources/img/profile-mobile.png" alt="">
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section class="skills" id="skills">
-                <div class="skills-title">
-                    <h2>Skills</h2>
-                </div>
                 <div class="container">
-                    <div class="item">
-                        <div class="icon-container">
-                            <i class="fa fa-html5 fa-5x"></i>
-                        </div>
-                        <div class="description">
-                            <h3>HTML</h3>
-                            <p>Level: Intermediate</p>
-                        </div>
+                    <div class="skills-title">
+                        <h2>Skills</h2>
                     </div>
-
-                    <div class="item">
-                        <div class="icon-container">
-                            <i class="fa fa-css3 fa-5x"></i>
+                        <div class="item">
+                            <div class="icon-container">
+                                <i class="fa fa-html5 fa-5x"></i>
+                            </div>
+                            <div class="description">
+                                <h3>HTML</h3>
+                                <p>Level: Intermediate</p>
+                            </div>
                         </div>
-                        <div class="description">
-                            <h3>CSS</h3>
-                            <p>Level: Intermediate</p>
+                        <div class="item">
+                            <div class="icon-container">
+                                <i class="fa fa-css3 fa-5x"></i>
+                            </div>
+                            <div class="description">
+                                <h3>CSS</h3>
+                                <p>Level: Intermediate</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="icon-container">
-                            <i class="fab fa-js fa-5x"></i>
+                        <div class="item">
+                            <div class="icon-container">
+                                <i class="fab fa-js fa-5x"></i>
+                            </div>
+                            <div class="description">
+                                <h3>JavaScript</h3>
+                                <p>Level: Intermediate</p>
+                            </div>
                         </div>
-                        <div class="description">
-                            <h3>JavaScript</h3>
-                            <p>Level: Intermediate</p>
+                        <div class="item">
+                            <div class="icon-container">
+                                <i class="fa fa-github fa-5x"></i>
+                            </div>
+                            <div class="description">
+                                <h3>Git</h3>
+                                <p>Level: Intermediate</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="icon-container">
-                            <i class="fa fa-github fa-5x"></i>
-                        </div>
-                        <div class="description">
-                            <h3>Git</h3>
-                            <p>Level: Intermediate</p>
-                        </div>
-                    </div>
                 </div>
             </section>
 
             <section class="projects" id="projects">
-                <div class="title">
-                    <h2>Projects</h2>
-                </div>
+
                 <div class="container">
-                    <div class="project-container">
-                        <div class="project-title">
-                            <h3>Fotomatic</h3>
-                        </div>
-                        <div class="images-container">
-                            <img src="./resources/img/fotomatic.png" alt="fotomatic project">
-                        </div>
-                        
+                    <div class="title">
+                        <h2>Projects</h2>
                     </div>
-
-                    <div class="project-container">
-                        <div class="project-title">
-                            <h3>Colmar Academy</h3>
+                        <div class="project-container">
+                            <div class="project-title">
+                                <h3>Fotomatic</h3>
+                            </div>
+                            <div class="images-container">
+                                <img src="./resources/img/fotomatic.png" alt="fotomatic project">
+                            </div>
+                    
                         </div>
-                        <div class="images-container">
-                            <img src="./resources/img/colmar.png" alt="Colmar Acedemy project">
+                        <div class="project-container">
+                            <div class="project-title">
+                                <h3>Colmar Academy</h3>
+                            </div>
+                            <div class="images-container">
+                                <img src="./resources/img/colmar.png" alt="Colmar Acedemy project">
+                            </div>
+                    
                         </div>
-                        
-                    </div>
-
-
-                    <div class="project-container">
-                        <div class="project-title">
-                            <h3>Excursion</h3>
+                        <div class="project-container">
+                            <div class="project-title">
+                                <h3>Excursion</h3>
+                            </div>
+                            <div class="images-container">
+                                <img src="./resources/img/excursion.png" alt="excursion project">
+                            </div>
                         </div>
-                        <div class="images-container">
-                            <img src="./resources/img/excursion.png" alt="excursion project">
-                        </div>
-                        
-                    </div>
-
                 </div>
+
             </section>
 
             <section class="contact" id="contact">
